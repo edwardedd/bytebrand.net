@@ -1,0 +1,327 @@
+body{
+  font-family: sans-serif;
+}
+header{
+  position: relative;
+  height: 560px;
+  max-height: 560px;
+}
+#navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  min-height: 68px;
+}
+
+.navbar{
+  margin-bottom: 0;
+}
+
+.navbar-toogle{
+  display: none;
+}
+.navbar .logo{
+  width: 175px;
+  height: 40px;
+  background: url('src/logo.png');
+  background-repeat: no-repeat;
+}
+
+.navbar-collapse{
+
+}
+
+li a{
+  color: black;
+  border-top: 3px solid;
+  border-top-color: transparent;
+  padding: 22px 7px 10px;
+}
+
+li a:hover{
+  background-color: transparent!important;
+  color: black;
+}
+
+li:nth-child(9) a {
+  color: #4b9d13;
+  border-top-color: #4b9d13
+}
+
+.video-jobs{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: -60px;
+}
+
+.image_media_screen{
+  display: none;
+}
+
+.title-on-job{
+  height: 100%;
+}
+
+.title-field{
+  height: 100%;
+}
+
+.video_title{
+  font-size: 80px;
+  color: white;
+}
+
+
+.jobs_power{
+
+}
+
+.view-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.wrapper_job{
+  width: 33%;
+  overflow: hidden;
+  height: 400px;
+}
+
+.job_item{
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.wrapper_job_item{
+  border: 1px solid #d6d6d6;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  position: relative;
+}
+
+.field_category{
+  margin-bottom: 15px;
+  color: #4b9d13;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.field_title{
+  position: relative;
+  color: #000!important;
+  font-weight: 700;
+  font-size: 20px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  height: 77px;
+  /* font-family: Montserrat; */
+}
+
+.field_date{
+  text-align: right;
+  font-size: 13px;
+  color: #d8d8d8;
+  font-weight: 600;
+}
+
+.form_feedback{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action_title{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.input_wrapper{
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  /* background-color: #F7F7F7; */
+  padding: 20px 20px;
+}
+
+.input{
+  width: 100%;
+  height: 45px;
+  margin-bottom: 36px;
+}
+
+.upload{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.paperclip{
+  
+  height: 18px;
+  cursor: pointer;
+}
+#attach_cv{
+  display: none;
+}
+
+.submit_btn{
+  padding: 5px 30px;
+  background-color: #FF0000;
+  border: none;
+}
+
+.scroll_up{
+  position: absolute;
+  top: 0px;
+  left: 180px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.scroll_down{
+  position: absolute;
+  top: 460px;
+  left: 180px;
+  height: 30px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.footer{
+  min-height: 68px;
+  margin-top: 100px;
+}
+.block_navigation{
+  display: flex;
+  justify-content: center;
+}
+.list_item{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 30%;
+  
+}
+
+.nav_title{
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.item{
+  height: 36px;
+  width: 36px;
+}
+
+.item .facebook_img{
+  /* background: url(''); */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.instagram{
+  height: 37px;
+  opacity: 0.2;
+}
+
+@media only screen and (max-width: 540px) {
+  .video-jobs{
+    display: none;
+  }
+
+  .view-content{
+    flex-direction: column;
+    
+  }
+
+  .job_item{
+    width: 50%;
+    height: 55%;
+    margin-right: 25px;
+    margin-left: 7px;
+  }
+
+  .wrapper_job{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    height: auto;
+  }
+
+  .image_media_screen{
+    background: url('src/earth.jpg');
+    display: block;
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: 100% 75%;
+  }
+
+  .logo{
+    margin-left: 20px;
+    margin-top: 12px;
+  }
+
+  .navbar-toogle{
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 10%;
+  }
+
+  .icon_bar{
+    width: 22px;
+    height: 3px;
+    background: #000;
+  }
+
+  .title-on-job{
+    position: absolute;
+    top: 0;
+    
+  }
+
+  .video_title{
+    font-size: 60px;
+  }
+
+  .scroll_down{
+    top: 100px;
+    transform: rotate(90deg);
+    left: 94%;
+  }
+  .scroll_up{
+    top: 100px;
+    left: -3%;
+    transform: rotate(-90deg);
+  }
+
+  .form_feedback{
+    width: 100%;
+  }
+
+  .input_wrapper{
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .input{
+    margin-bottom: 38px;
+  }
+
+  .field_title{
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  
+}

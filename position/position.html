@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="position.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header role="baner">
+    <div id="navbar">
+      <nav class="navbar container">
+        <div class="row">
+          <div class="navbar-header">
+            <div class="region region-navigation">
+              <a href="/" class="logo navbar-btn center-block"></a>
+            </div>
+            <img class="navbar-toogle" src="../src/menu.png" onclick="openMenu()"></img>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar_menu">
+            <ul id="main-menu" class="menu nav navbar-nav navbar-right">
+              <li>
+                <a href="">HOME</a>
+              </li>
+              <li>
+                  <a href="">SERVICES</a>
+              </li>
+              <LI>
+                  <a href="">ABOUT US</a>
+              </LI>
+              <LI>
+                  <a href="">MANAGEMENT</a>
+              </LI>
+              <li>
+                  <a href="">TECH STAFF</a>
+              </li>
+              <li>
+                  <a href="">PORTFOLIO</a>
+              </li>
+              <LI>
+                  <a href="">CONTACT</a>
+              </LI>
+              <LI>
+                  <a href="">BLOG</a>
+              </LI>
+              <LI>
+                  <a href="">JOBS</a>
+              </LI>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section id="position">
+    <div class="container">
+      <div class="row">
+        <div class="title_of_position col-xs-12">
+          Middle Javascript developer
+        </div>
+        <div class="buttons_nav">
+          <button class="go_apply">Go to apply</button>
+          <button class="share">Share the link</button>
+        </div>
+        <div class="short_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Autem eius unde expedita corrupti similique dolore dolores reprehenderit quibusdam
+           explicabo excepturi labore nihil voluptates deleniti minus aliquam eveniet, id ipsam
+           sapiente maiores blanditiis error dignissimos ad architecto optio. Et officiis beatae
+           voluptatem error architecto! Suscipit dolores sed minima doloribus sunt veritatis!
+           Ea, ad?
+        </div>
+        <button class="see_more" onclick="openDescription()">see more</button>
+        <div class="long_description" id="description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum atque placeat autem, iste ab
+          earum impedit asperiores quae! Facere, alias illum? Tempora iure sequi sapiente facere vero
+          repellat asperiores natus fugit. Dolorum libero aut minus possimus dolores quaerat amet modi
+          blanditiis, iste quo eveniet consectetur officia aliquid, similique aliquam id nulla adipisci?
+           Harum debitis consequatur dignissimos! Itaque molestias ad neque nobis quibusdam alias
+           architecto, temporibus fugit illo quod reiciendis soluta aut. Adipisci neque similique,
+           aperiam eligendi sed facilis. Tempore, aperiam. Dolorum est porro, dolorem asperiores odio
+           sed sint neque quis sapiente omnis cum alias, aperiam quia iure excepturi necessitatibus
+           deserunt magni molestiae accusamus officiis tempora explicabo ipsum aspernatur.
+           Doloribus consectetur aliquid deserunt quam odio qui ea, dolorem quasi.
+           Corporis cupiditate, ratione illo non beatae, ab incidunt vel doloremque, voluptas illum nemo
+           aut totam adipisci nihil magni impedit recusandae mollitia maiores officiis quidem?
+           Similique aspernatur obcaecati est repellendus laboriosam optio iusto nam voluptate
+           sunt totam voluptas perferendis, debitis, recusandae hic, ducimus accusamus modi commodi
+           deleniti corrupti explicabo dicta? Cumque eligendi beatae dignissimos repellendus sint
+           soluta incidunt corrupti reprehenderit doloribus, nemo odio delectus.
+           Itaque qui tempore possimus quidem, voluptates officia quam nemo alias,
+           nesciunt voluptate inventore est doloribus dolores ipsum voluptatum modi odit?
+           Itaque officiis labore esse repudiandae quae deleniti voluptas quibusdam, in aut, modi aliquam
+            voluptatem minus quasi aspernatur, nihil quidem eveniet mollitia nesciunt harum aliquid
+            eius natus! Laboriosam, nobis mollitia! Ipsum amet officia aspernatur inventore corporis
+            molestias quod, consectetur cum, odit reprehenderit minima impedit sequi, explicabo nostrum
+            omnis nulla?
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="contact_section">
+    <section class="form_feedback" id="form">
+      <form action="" class="input_wrapper">
+        <div class="action_title">Get in Touch</div>
+        <input type="text" class="input" name="fname" placeholder="First name *" required><br>
+        <input type="text" class="input" name="lname" placeholder="Last name *" required><br>
+        <input type="text" class="input" name="email" placeholder="Email *" required><br>
+        <input type="text" class="input" name="lname" placeholder="Comments" ><br>
+
+        <div class="upload">
+          <label for="attach_cv">
+              <!-- <img class="paperclip" src="src/paperclip.png" alt=""/> -->
+              Attach your CV
+          </label>
+          <input id="attach_cv" type="file" >
+          <input class="submit_btn" type="submit" value="Apply">
+        </div>
+      </form>
+    </section>
+   
+  </section>
+  
+  <script src="position.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
