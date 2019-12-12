@@ -60,8 +60,9 @@ li a:hover{
   font-weight: 600;
  }
 
-.long_description{
-  display: none;
+.short_description{
+  overflow: hidden;
+  height: 100px;
 }
 
 .see_more{

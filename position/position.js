@@ -2,11 +2,11 @@
 function openDescription(){ 
   let text = document.getElementById('description');
   let btnText = document.getElementById('more_btn');
-  if(text.style.display =='none'){
-    text.style.display = 'block';
+  if(text.style.height !=='auto'){
+    text.style.height = 'auto';
     btnText.innerHTML = "Read less"
   } else{
-    text.style.display = 'none';
+    text.style.height = '100px';
     btnText.innerHTML = "Read more"
   }
 }
@@ -21,4 +21,4 @@ function openMenu(){
   {
     menu.style.display = "none";
   }
-}
+} 

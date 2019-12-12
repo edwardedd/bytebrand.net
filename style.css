@@ -33,9 +33,7 @@ header{
   background-repeat: no-repeat;
 }
 
-.navbar-collapse{
 
-}
 
 li a{
   color: black;
@@ -80,9 +78,6 @@ li:nth-child(9) a {
 }
 
 
-.jobs_power{
-
-}
 
 .view-content{
   display: flex;
@@ -91,10 +86,17 @@ li:nth-child(9) a {
 
 }
 
-.wrapper_job{
+.wrapper_overflow{
   width: 33%;
-  overflow: hidden;
+  /* overflow: auto;
+  overflow-x: hidden; */
+}
+
+.wrapper_job{
+  width: 104%;
+  /* overflow: auto; */
   height: 400px;
+  /* overflow-y: auto; */
 }
 
 .job_item{
@@ -259,6 +261,10 @@ li:nth-child(9) a {
     height: 55%;
     margin-right: 25px;
     margin-left: 7px;
+  }
+
+  .wrapper_overflow{
+    width: 100%;
   }
 
   .wrapper_job{
