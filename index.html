@@ -83,7 +83,7 @@
               <img class="scroll_up" src="src/upload.png" alt="" onclick="scrollUp()">
               <img class="scroll_down" src="src/upload.png" alt="" onclick="scrollDown()">
             <div class="wrapper_job" id="jobsWrapper" scroll="no">
-                
+
                 <!-- <button class="scroll_up" onclick="scrollUp()">scroll up</button> -->
                 <!-- <button class="scroll_down" onclick="scrollDown()">scroll down</button> -->
               <div class="job_item">
@@ -145,7 +145,11 @@
                     <img class="paperclip" src="src/paperclip.png" alt=""/>
                     Attach your CV
                 </label>
-                <input id="attach_cv" type="file" >
+                <div class="attach_wrapper">
+                  <input id="attach_cv" class="attach_cv"type="file" >
+                  <div class="filename-container hidee">
+                  </div>
+                </div>
                 <input class="submit_btn" type="submit" value="Apply">
               </div>
             </form>

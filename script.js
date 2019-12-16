@@ -35,3 +35,20 @@ function openMenu(){
     menu.style.display = "none";
   }
 }
+
+
+  $('.attach_cv').change(function(){
+    $file = $(this).val();
+    $file = $file.replace(/.*[\/\\]/, '');
+    $('.filename-container').append("<span  class='filename'>" + $file +"<img id='closed_f' src='src/cancel.png' alt=''>"+"</span>").show();
+    $('#closed_f').on('click', function(e){
+      $('.filename-container').empty();
+      console.log("zal")
+    })
+  });
+
+
+
+
+ 
+
