@@ -48,18 +48,19 @@ function openMenu(){
   });
 
 
-  function Copy() {
-    var $temp = $("<input>");
-    var $url = $(location).attr('href');
+  
+
     
     $('.share').on('click', function() {
+      var $temp = $("<input>");
+      var $url = $(location).attr('href');
       $("body").append($temp);
       $temp.val($url).select();
       document.execCommand("copy");
       $temp.remove();
       $(".share").text("URL copied!");
     });
-  };
+  
 
 
 
