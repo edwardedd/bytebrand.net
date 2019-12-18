@@ -1,7 +1,7 @@
 
 const slider = $(".wrapper_job");
 slider.slick({
-  infinite: false,
+  infinite: true,
   slidesToShow: 2,
   slidesToScroll: 2,
   vertical: true,
@@ -9,7 +9,7 @@ slider.slick({
   nextArrow: $('.scroll_down'),
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 768,
       settings: {
         vertical: false,
       }

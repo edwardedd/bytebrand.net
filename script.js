@@ -38,14 +38,29 @@ function openMenu(){
 
 
   $('.attach_cv').change(function(){
-    $file = $(this).val();
-    $file = $file.replace(/.*[\/\\]/, '');
-    $('.filename-container').append("<span  class='filename'>" + $file +"<img id='closed_f' src='src/cancel.png' alt=''>"+"</span>").show();
+    let file = $(this).val();
+    file = file.replace(/.*[\/\\]/, '');
+    $('.filename-container').append("<span  class='filename'>" + file +"<img id='closed_f' src='src/cancel.png' alt=''>"+"</span>").show();
     $('#closed_f').on('click', function(e){
       $('.filename-container').empty();
       console.log("zal")
     })
   });
+
+
+  function Copy() {
+    var $temp = $("<input>");
+    var $url = $(location).attr('href');
+    
+    $('.share').on('click', function() {
+      $("body").append($temp);
+      $temp.val($url).select();
+      document.execCommand("copy");
+      $temp.remove();
+      $(".share").text("URL copied!");
+    });
+  };
+
 
 
 
